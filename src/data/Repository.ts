@@ -10,7 +10,7 @@ export default class DataRepository {
     this.pokemon = Pokemon.init();
   }
 
-  public static getInstance(): DataRepository {
+  public static create(): DataRepository {
     if (!DataRepository.instance) {
       DataRepository.instance = new DataRepository();
     }
