@@ -24,6 +24,9 @@ https://reactrouter.com/docs/en/v6/getting-started/overview
 user params with types -> https://dev.to/javila35/react-router-hook-useparam-now-w-typescript-m93
 https://remix.run/blog/react-router-v6
 
+https://reacttraining.com/blog/react-router-v6-pre/
+https://www.codingdeft.com/posts/react-router-tutorial/
+
 
 ## Redux
 React redux toolkit typescript: (Not implemented yet)
@@ -70,3 +73,9 @@ https://www.freecodecamp.org/news/react-binding-patterns-5-approaches-for-handli
 * add .env -> proccess.env --> poner lo del .env
 
 * How work prettier???
+
+* Manejar "Nested routes" en vez de absolutos (por mejores practicas)
+
+* erificar si se puede sacar del alguna manera los structures de data, para que tambien
+se maneje ese typo al momento de hacer post, ya que como tiene el data un nivel mas arriba
+esa estructura se tendria que crear una nueva para hacer el post.

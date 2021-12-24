@@ -55,4 +55,15 @@ export default class AsyncRequests {
         });
     },
   );
+
+  public delete = (url: string) => new Promise((resolve, reject) => {
+    axios
+      .delete(url)
+      .then((response) => {
+        resolve(response);
+      })
+      .catch((error) => {
+        reject(error);
+      });
+  });
 }

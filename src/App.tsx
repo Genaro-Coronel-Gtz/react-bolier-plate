@@ -9,6 +9,8 @@ import Counter from './pages/counter/Counter';
 import Product from './pages/product/Product';
 import Dashboard from './pages/dashboard/Dashboard';
 import Pokemon from './pages/Pokemon/Pokemon';
+import Todo from './pages/Todo/Todo';
+import CreateTodo from './pages/Todo/CreateTodo';
 
 const AppRouter = () => (
   <Provider store={store}>
@@ -29,7 +31,10 @@ const AppRouter = () => (
               <Link to="/counter"> Contador </Link>
             </li>
             <li>
-              <Link to="/todos"> Todos </Link>
+              <Link to="/pokemons"> Pokemons </Link>
+            </li>
+            <li>
+              <Link to="/todos"> Todo </Link>
             </li>
           </ul>
         </nav>
@@ -37,7 +42,9 @@ const AppRouter = () => (
           <Route path="/" element={<Dashboard />} />
           <Route path="/products/:id" element={<Product />} />
           <Route path="/counter" element={<Counter />} />
-          <Route path="/todos" element={<Pokemon />} />
+          <Route path="/pokemons" element={<Pokemon />} />
+          <Route path="/todos" element={<Todo />} />
+          <Route path="/todos/new" element={<CreateTodo />} />
         </Routes>
       </div>
     </Router>
