@@ -8,7 +8,9 @@ const CreateTodo = () => {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
   const navigate = useNavigate();
-  const repository = DataRepository.create();
+  // Este repository deberia de estar disponible en todoa la app
+  // Para no crear otra instancia ya que es un singleton.
+  const repository = DataRepository.getInstance();
 
   const handleSubmit = (event: { preventDefault: () => void; }) => {
     event.preventDefault();

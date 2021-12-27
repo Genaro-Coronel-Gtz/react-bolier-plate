@@ -10,7 +10,9 @@ import './Todo.css';
 
 const SUCCESS = 'success';
 const Todo = () => {
-  const repository = DataRepository.create();
+  // Este repository deberia de estar disponible en todoa la app
+  // Para no crear otra instancia ya que es un singleton.
+  const repository = DataRepository.getInstance();
   const [todos, setTodos] = useState<TodoStructure | undefined>();
   const navigate = useNavigate();
 

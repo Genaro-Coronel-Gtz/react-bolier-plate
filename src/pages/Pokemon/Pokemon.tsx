@@ -4,7 +4,7 @@ import Repository from '../../data/Repository';
 import Pokemons from '../../data/structures/Pokemon';
 
 const Todo = () => {
-  const repository = Repository.create();
+  const repository = Repository.getInstance();
   const [todos, setTodos] = useState<Pokemons | undefined>();
   useEffect(() => {
     repository.pokemon.all().then((response: Pokemons) => {

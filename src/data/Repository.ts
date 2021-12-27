@@ -14,7 +14,7 @@ export default class DataRepository {
     this.todo = Todo.init();
   }
 
-  public static create(): DataRepository {
+  public static getInstance(): DataRepository {
     if (!DataRepository.instance) {
       DataRepository.instance = new DataRepository();
     }
