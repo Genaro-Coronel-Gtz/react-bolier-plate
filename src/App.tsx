@@ -19,7 +19,7 @@ const AppRouter = () => (
         <nav>
           <ul>
             <li>
-              <Link to="/">Dashboard</Link>
+              <Link to="/">Dashboard - test jenkis</Link>
             </li>
             <li>
               <Link to={`/products/${1}`}>First product</Link>
